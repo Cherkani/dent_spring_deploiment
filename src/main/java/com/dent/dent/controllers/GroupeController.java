@@ -12,8 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/groupes")
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001","http://localhost:5173"})
-
+@CrossOrigin(origins = "*")
 public class GroupeController {
     @Autowired
     private GroupeService service;
